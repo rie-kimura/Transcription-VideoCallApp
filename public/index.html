@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.webrtc.ecl.ntt.com/skyway-4.4.1.js"></script>
+  <title>自動文字起こしテレビ電話</title>
+</head>
+
+<body>
+  <div class="f-containar">
+  
+    <div class="videochat">  
+    
+      <div class="explain">
+        <h3>使い方</h3>
+        ・通話したい相手のIDを入力し、発信ボタンを押す<br>
+        ・スタートボタンを押すと、会話の内容が自動で文字起こしされる<br>
+      </div>
+
+      <div class="video">
+        <video id="my-video" width="400px" autoplay muted playsinline></video>
+        <video id="their-video" width="400px" autoplay muted playsinline></video>
+        <div class="display">
+          <div id="my-id"></div>
+          <input id="their-id"></input>
+          <button id="make-call">発信</button>
+        </div>
+      </div>
+        
+    </div>
+    
+    <div class="chat">  
+    <h1>自動文字起こしテレビ電話</h1>
+    <button id="btn">Start</button>
+    <div id="flame">
+      <div id="content"></div>
+    </div>
+    </div>
+
+  </div>
+
+<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
+<script  src="./firebase.js"></script>  
+<script  src="./videochat.js"></script>  
+<script  src="./webspeech.js"></script>  
+
+</body>
+</html>

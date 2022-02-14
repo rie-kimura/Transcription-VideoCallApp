@@ -1,0 +1,117 @@
+body{
+  background-color: #CBFFD3	;
+}
+
+h1{
+  font-size: 30px;
+}
+
+.f-containar{
+  display:flex;
+}
+
+.explain{
+  padding: 20px 20px;
+}
+
+.videochat{
+  flex-direction: column;
+  padding: 100px 30px;
+}
+
+.video{
+  flex-direction: row;
+  padding: 0px 10px;
+}
+
+#their-video{
+  padding: 0px 30px;
+}
+
+.display{
+  padding: 10px 15px;
+}
+
+#my-id{
+  margin: 0px 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#their-id{
+  margin: 0px 10px;
+  font-size: 15px;
+}
+
+#make-call{
+  padding: 0.5em;
+  margin: 10px 0;
+  display: block;
+  color: #fff !important;
+  background: 	#00BB00	;
+  text-decoration: none;
+  font-weight: bold;
+  font-size:16px;
+  border-radius: 3px;
+  text-align:center;
+  text-decoration:none !important;
+  border-radius: 30px;
+}
+#make-call:before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin: -3px 5px 0 0;
+  background: url("/ensyu_ogura/mojiokoshi-videochat/public/電話.png") no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+#make-call:hover {
+  background: #00DD00	;
+}
+@media screen and (min-width: 768px){
+  #make-call{
+    padding: 0.5em 2em;
+    margin: 10px auto;
+    font-size:20px;
+    display:inline-block;
+  }
+  #make-call:before {
+    margin: -3px 10px 0 0;
+  }
+}
+
+.chat{
+  padding: 50px 50px;
+}
+
+#btn {
+  display:inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #00BB00		;/*ボタン色*/
+  color: white;
+  font-size: 20px;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+  
+
+}
+#btn:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+
+#flame {
+  margin: 2em auto;  
+  padding: 20px ;
+  width: 90%; /*幅の調節*/
+  color: #666666; /*文字色*/
+  background-color: #f7f7f7; /*背景色*/
+  border: 2px solid #ccc; /*線の太さ・色*/
+  border-radius: 8px; /*角の丸み*/ 
+ }
+
