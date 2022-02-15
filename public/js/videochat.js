@@ -18,7 +18,8 @@ let localStream;
 
   //Peer作成
   const peer = new Peer({
-    key: 'dcc7fb94-900e-41d9-9bdc-bf0940dd5218',
+    // key: 'dcc7fb94-900e-41d9-9bdc-bf0940dd5218'
+    key: '44de0487-409a-4ec0-bbf9-a9de40803161',
     debug: 3
   });
 
